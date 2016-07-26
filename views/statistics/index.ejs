@@ -1,0 +1,87 @@
+<%- include ../layout/header %>
+<%- include ../layout/navigation_bar %>
+<!-- 这里展示结果 -->
+
+<div class="sub_nav search control" >
+    <form id="queryUser" action="" method="get">
+        日期：<input type="text" maxlength="10" size="8" id="date" name="date" readonly="true" value="<%= (null == date || typeof date === 'undefined' ? '' : date) %>" onchange="javascript:document.getElementById('queryUser').submit()"/>
+    </form>
+</div>
+
+<table class="grid_order">
+    <tbody>
+    <tr>
+        <td width="10%">所有用户数</td>
+        <td width="50%"><%= totalUidCount %></td>
+    </tr>
+    <tr>
+        <td width="10%">今日注册用户数</td>
+        <td width="50%"><%= todayRegisterUidCount %></td>
+    </tr>
+    <tr>
+        <td width="10%">今日注册设备数</td>
+        <td width="50%"><%= todayRegisterDeviceCount %></td>
+    </tr>
+    <tr>
+        <td width="10%">今日登录用户数</td>
+        <td width="50%"><%= todayLoginUidCount %></td>
+    </tr>
+    <tr>
+        <td width="10%">今日登录设备数</td>
+        <td width="50%"><%= todayLoginDeviceCount %></td>
+    </tr>
+    <tr>
+        <td width="10%">今日老用户登录用户数</td>
+        <td width="50%"><%= todayOldUserLoginUidCount %></td>
+    </tr>
+    <tr>
+        <td width="10%">今日老用户登录设备数</td>
+        <td width="50%"><%= todayOldUserLoginDeviceCount %></td>
+    </tr>
+    <tr>
+        <td width="10%">今日登录均值用户数</td>
+        <td width="50%"><%= Math.ceil(todayLoginUidCount / 24) %>（当日总用户数/24小时）</td>
+    </tr>
+    <tr>
+        <td width="10%">今日登录峰值用户数</td>
+        <td width="50%"><%= maxLoginHourUidCount %></td>
+    </tr>
+    </tbody>
+</table>
+
+<hr>
+
+<table class="grid_order">
+    <tbody>
+    <tr>
+        <th width="10%">日期</th>
+        <th width="10%">新增设备数</th>
+        <th width="10%">第一日留存率</th>
+        <th width="10%">第二日留存率</th>
+        <th width="10%">第三日留存率</th>
+        <th width="10%">第四日留存率</th>
+        <th width="10%">第五日留存率</th>
+        <th width="10%">第六日留存率</th>
+        <th width="10%">第七日留存率</th>
+    </tr>
+    <%
+    retentions.forEach(function(retention){
+    %>
+    <tr>
+        <td width="10%"><%= retention.date %></td>
+        <td width="10%"><%= retention.count %></td>
+        <td width="10%"><%= retention.r1 %></td>
+        <td width="10%"><%= retention.r2 %></td>
+        <td width="10%"><%= retention.r3 %></td>
+        <td width="10%"><%= retention.r4 %></td>
+        <td width="10%"><%= retention.r5 %></td>
+        <td width="10%"><%= retention.r6 %></td>
+        <td width="10%"><%= retention.r7 %></td>
+    </tr>
+    <%
+    });
+    %>
+    </tbody>
+</table>
+<div id="pageDiv"></div>
+<%- include ../layout/footer %>

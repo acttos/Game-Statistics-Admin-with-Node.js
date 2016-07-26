@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>后台数据统计系统</title>
+    <!--<link href="/stylesheets/bootstrap-combined.min.css" media="screen" rel="stylesheet" type="text/css">-->
+    <link href="/stylesheets/admin/base.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="/stylesheets/admin/wice_grid.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="/javascripts/datepicker/css/jquery-ui.css" rel="stylesheet" type="text/css"/>
+
+    <script src="/javascripts/jquery.js" type="text/javascript"></script>
+    <script src="/javascripts/jquery_ujs.js" type="text/javascript"></script>
+    <script src="/javascripts/datepicker/js/jquery-ui-datepicker.js" type="text/javascript"></script>
+    <script src="/javascripts/datepicker/js/jquery-migrate-1.1.1.js" type="text/javascript"></script>
+
+    <script src="/javascripts/highcharts/highcharts.js" type="text/javascript"></script>
+    <script src="/javascripts/highcharts/highcharts-more.js" type="text/javascript"></script>
+
+    <script src="/javascripts/bootstrap-3.0.3/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="/javascripts/bootstrap-3.0.3/js/bootstrap-paginator.js" type="text/javascript"></script>
+
+    <script type="application/javascript">
+        jQuery(function(){
+            jQuery("#date").datepicker();
+            jQuery("#start_date").datepicker();
+            jQuery("#end_date").datepicker();
+        });
+
+    </script>
+</head>
+<body>
+<div id="wapper">
+    <div id="head">
+        <div class="top_menu">
+            <!-- 登录状态条件判断 -->
+            <% if(null == user){ %>
+            <div class="top_menu"><a href="/access/forget_password">忘记密码</a></div>
+            <% }else{ %>
+            <div class="top_menu">登录为: &nbsp;<a href="/personal/show">[ <%= user.email %> ]</a><a href="/personal/edit">修改密码</a><a
+                        href="/access/logout">退出登录</a></div>
+            <% } %>
+        </div>
+        <div class="logo">
+            后台数据统计系统 - <%= serverName %>
+        </div>
+    </div>
+    <div id="middle">

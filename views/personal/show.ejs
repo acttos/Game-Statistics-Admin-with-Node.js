@@ -1,0 +1,28 @@
+
+<%- include ../layout/header %>
+<%- include ../layout/navigation_bar %>
+<!-- 这里展示结果 -->
+<table class="grid_order">
+    <form method="post">
+        <tbody>
+        <tr>
+            <td width="10%">Email:</td>
+            <td width="50%" align="center"><%= null != data ? data.email : ''%></td>
+        </tr>
+        <tr>
+            <td width="10%">名称:</td>
+            <td width="50%" align="center"><%= null != data ? data.name : ''%></td>
+        </tr>
+        <tr>
+            <td width="10%" >角色:</td>
+            <td width="50%" align="center"><%= null != data ? (data.role == 'user' ? '用户' : '管理员') : ''%></td>
+        </tr>
+        <tr>
+            <td width="50%" colspan="2" align="center"> <a href="/personal/edit">修 改 密 码</a> </button></td>
+        </tr>
+        </tbody>
+    </form>
+</table>
+<%- include ../layout/footer %>
+
+

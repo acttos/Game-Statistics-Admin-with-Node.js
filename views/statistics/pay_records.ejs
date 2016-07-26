@@ -1,0 +1,98 @@
+<%- include ../layout/header %>
+<%- include ../layout/navigation_bar %>
+
+<% if (message) { %>
+<center><div class="alert"><%= message %></div></center>
+<% } %>
+
+<h1 class="title">用户充值统计</h1>
+<div class="sub_nav search control" >
+    <p>
+        <form>
+        <input type="radio" name="type" value="UID" <%= 'UID' === type ? 'checked="true"' : '' %>/> UID&nbsp;&nbsp;<input type="radio" name="type" value="NICKNAME" <%= 'NICKNAME' === type ? 'checked="true"' : '' %>/> 用户昵称&nbsp;&nbsp;<input id="value" type="text" name="value" value="<%= value %>"/>&nbsp;&nbsp;时间区间:<input id="start_date" type="text" name="start_date" value="<%= start_date %>"/> 至 <input id="end_date" type="text" name="end_date" value="<%= end_date %>"/> <input type="submit" value="搜索"/>
+        </form>
+    </p>
+</div>
+<div class="sub_nav">
+    总计： <%= totalAmount %> RMB
+</div>
+<!-- 每个服的充值基础信息目前显示当日记录 -->
+<div class="sub_nav">
+    每日充值统计
+</div>
+<table class="grid">
+    <tbody>
+    <tr>
+        <td width="10%">日期</td>
+        <td width="10%">充值金额</td>
+        <td width="10%">充值人数</td>
+        <td width="10%">登录人数</td>
+        <td width="15%">ARPU(每用户平均收入)</td>
+        <td width="20%">付费渗透率(充值人数/登录人数)</td>
+    </tr>
+    <%
+        if(dailyPayInfos === undefined || dailyPayInfos.length === 0){
+    %>
+    <tr>
+        <td colspan = "6" align="center" width="100%"><strong>选择<font color="blue">[时间区间]</font>参数后方可显示充值统计数据</strong></td>
+    </tr>
+    <%
+        }else{
+            dailyPayInfos.forEach(function(dailyPayInfo){
+    %>
+    <tr>
+        <td width="10%"><%= dailyPayInfo.date %></td>
+        <td width="10%"><%= dailyPayInfo.dailyTotalAmount %></td>
+        <td width="10%"><%= dailyPayInfo.dailyPayUserCount %></td>
+        <td width="10%"><%= dailyPayInfo.dailyLoginUserCount %></td>
+        <td width="15%"><%= (dailyPayInfo.dailyTotalAmount / dailyPayInfo.dailyPayUserCount).toFixed(2) %></td>
+        <td width="20%"><%= ((dailyPayInfo.dailyPayUserCount / dailyPayInfo.dailyLoginUserCount).toFixed(4)) %></td>
+    </tr>
+    <%
+            });
+        }
+    %>
+    </tbody>
+</table>
+<div class="sub_nav">
+    充值流水统计
+</div>
+<table class="grid">
+    <tbody>
+    <tr>
+        <td width="10%">用户ID</td>
+        <td width="10%">用户昵称</td>
+        <td width="10%">充值流水号</td>
+        <td width="10%">充值名称</td>
+        <td width="10%">金额</td>
+        <td width="10%">时间</td>
+        <td width="10%">状态</td>
+    </tr>
+    <%
+        var payRecords = prs;
+        if(payRecords === undefined || payRecords.length === 0){
+    %>
+    <tr><td colspan="7">暂无相关数据</td></tr>
+    <%
+        }else{
+            payRecords.forEach(function(payRecord){
+
+    %>
+    <tr>
+        <td width="10%"><%= payRecord.uid %></td>
+        <td width="10%"><%= payRecord.nickname %></td>
+        <td width="10%"><%= payRecord.trans_id %></td>
+        <td width="10%"><%= payRecord.product_id %></td>
+        <td width="10%"><%= payRecord.amount %></td>
+        <td width="10%"><%= payRecord.time_str %></td>
+        <td width="10%"><%= '1' === payRecord.msg_status ? '成功' : '失败' %></td>
+    </tr>
+    <%
+
+            });
+        }
+    %>
+    </tbody>
+</table>
+<div id="pageDiv"></div>
+<%- include ../layout/footer %>

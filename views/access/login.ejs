@@ -1,0 +1,47 @@
+<%- include ../layout/header %>
+
+  
+  <%
+  if (message) {
+  %>
+    <center><div class="alert"><%= message %></div></center>
+  <%
+  }
+      var hour = new Date().getHours();
+      var forbidden = false;
+      if(hour > 0 && hour < 7){
+        forbidden = true;
+  %>
+    <center><div class="alert">现在是休息时间,请您多注意休息!<br/><br/>此时系统还未准备好,7点后开放!</div></center>
+  <%
+      }
+  %>
+  <div class="login_content">
+      <table class="login">
+				<form method="post">
+              <tbody>
+                  <tr>
+                      <td class="t01"><label for="username">邮箱：</label></td>
+                      <td class="t02">
+                        <input class="post_name" type="text" name="email" id="email"<%= forbidden ? 'disabled="true"' : ''%>/>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td class="t01"><label for="password">密码：</label></td>
+                      <td class="t02">
+                        <input class="post_name" type="password" name="password" id="password" <%= forbidden ? 'disabled="true"' : ''%>/>
+                      </td>
+                  </tr>
+                  <tr height="20">
+                      <td></td>
+                      <td></td>
+                  </tr>
+                  <tr>
+                      <td class="t01"></td>
+                      <td class="t03"><button onmouseout="this.className='button_submit_s';" onmouseover="this.className='button_submit_s button_submit_s_hover';" type="submit" class="button_submit_s" <%= forbidden ? 'disabled="true"' : ''%>> 登录&gt;&gt;</button></td>
+                  </tr>
+              </tbody>
+          </form>
+      </table>
+  </div>
+<%- include ../layout/footer %>

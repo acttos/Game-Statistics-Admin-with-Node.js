@@ -1,0 +1,58 @@
+<div class="fr"><a href="admins/new">添加新账号</a></div>
+<div class="clear"></div>
+<table class="grid">
+    <thead>
+      <tr>
+        <th width="5%">
+          ID
+        </th>
+        <th width="10%">名称</th>
+        <th width="10%">Email</th>
+        <th width="10%">角色</th>
+        <th width="15%">注册时间</th>
+        <th width="10%">访问次数</th>
+        <th width="15%">访问时间</th>
+        <th width="10%">管理</th>
+      </tr>
+    </thead>
+    <tbody>
+      <%
+      var i = (currentPage - 1) * pageSize;
+      data.forEach(function(admin){
+      %>
+          <tr>
+            <td width="5%">
+              <%= ++i %>
+            </td>
+            <td width="10%"><%= admin.name %></td>
+            <td width="10%"><%= admin.email %></td>
+            <td width="10%"><%= admin.role %></td>
+            <td width="15%"><%= admin.created_at_str %></td>
+            <td width="10%"><%= admin.login_count %></td>
+            <td width="15%"><%= admin.last_login_at_str %></td>
+            <td width="10%">
+              <%
+              if(admin.email === user.email){
+              %>
+                ----
+              <%
+              }else{
+              %>
+                <a href="admins/edit?email=<%= admin.email %>"><%= "修改" %></a>&nbsp;&nbsp;
+                <a href="admins/remove?email=<%= admin.email %>"><%= "删除" %></a>
+              <%
+              }
+              %>
+            </td>
+        </tr>
+      <%
+      });
+      %>
+      <% if (!data || data.length == 0){ %>
+        <tr>
+          <td colspan="8">暂无相关数据</td>
+        </tr>
+      <% } %>
+    </tbody>
+</table>
+<div id="pageDiv"></div>

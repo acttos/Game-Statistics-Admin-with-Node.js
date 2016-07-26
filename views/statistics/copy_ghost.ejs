@@ -1,0 +1,48 @@
+<%- include ../layout/header %>
+<%- include ../layout/navigation_bar %>
+
+<% if (message) { %>
+<center><div class="alert"><%= message %></div></center>
+<% } %>
+
+<h1 class="title">副本魂魄产出统计</h1>
+<div class="sub_nav search control" >
+    <p>
+    <form>
+        UID:&nbsp;&nbsp;<input id="uid" type="text" name="uid" value="<%= uid %>"/>&nbsp;&nbsp;
+        时间区间:<input id="start_date" type="text" name="start_date" value="<%= start_date %>"/>
+        至 <input id="end_date" type="text" name="end_date" value="<%= end_date %>"/>
+        <select id="ttype" name="ttype"><option value="" <%= '' === ttype ? 'selected="selected"' : ''%>>全部</option>
+            <option value="0" <%= '0' === ttype ? 'selected="selected"' : '' %>>产出</option>
+            <option value="1" <%= '0' === ttype ? 'selected="selected"' : ''%>>消耗</option>
+        </select>
+        <input type="submit" value="搜索"/>
+    </form>
+    </p>
+</div>
+
+<table class="grid_order">
+    <tbody>
+    <tr>
+        <td width="10%">魂魄</td>
+        <td width="10%">次数</td>
+        <td width="10%">数量</td>
+        <td width="5%">玩家数</td>
+    </tr>
+
+    <%
+    gls.forEach(function(gl){
+    %>
+    <tr>
+        <td width="10%"><%= gl.num %></td>
+        <td width="10%"><%= gl.item_id %></td>
+        <td width="5%"><%= gl.item_type %></td>
+        <td width="10%"><%= gl.time_str %></td>
+    </tr>
+    <%
+    });
+    %>
+    </tbody>
+</table>
+<div id="pageDiv"></div>
+<%- include ../layout/footer %>

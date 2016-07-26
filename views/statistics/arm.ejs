@@ -1,0 +1,63 @@
+<%- include ../layout/header %>
+<%- include ../layout/navigation_bar %>
+
+<% if (message) { %>
+<center><div class="alert"><%= message %></div></center>
+<% } %>
+
+<h1 class="title">用户装备统计</h1>
+<div class="sub_nav search control" >
+    <p>
+    <form>
+        UID:&nbsp;&nbsp;<input id="uid" type="text" name="uid" value="<%= uid %>"/>&nbsp;&nbsp;
+        时间区间:<input id="start_date" type="text" name="start_date" value="<%= start_date %>"/>
+        至 <input id="end_date" type="text" name="end_date" value="<%= end_date %>"/>
+        <select id="ttype" name="ttype"><option value="" <%= '' === ttype ? 'selected="selected"' : ''%>>全部</option>
+            <option value="0" <%= '0' === ttype ? 'selected="selected"' : '' %>>产出</option>
+            <option value="1" <%= '1' === ttype ? 'selected="selected"' : ''%>>消耗</option>
+        </select>
+        <input type="submit" value="搜索"/>
+    </form>
+    </p>
+</div>
+<div class="sub_nav">
+    总计： <%= totalCount %> 条记录
+</div>
+
+<div id="chart"></div>
+
+<table class="grid_order">
+    <tbody>
+    <tr>
+        <td width="10%">UID</td>
+        <td width="10%">类型</td>
+        <td>操作</td>
+        <td>数量</td>
+        <td>操作后数量</td>
+        <td width="10%">相关id</td>
+        <td width="10%">相关类型</td>
+        <td width="10%">附加信息</td>
+        <td width="15%">时间</td>
+    </tr>
+
+    <%
+    als.forEach(function(al){
+    %>
+    <tr>
+        <td width="8%"><%= al.account_id %></td>
+        <td width="5%"><%= al.ttype === 0 ? "产出" : "消耗" %></td>
+        <td width="10%"><%= al.from_str %></td>
+        <td><%= al.num %></td>
+        <td><%= al.after_num %></td>
+        <td><%= al.item_id %></td>
+        <td width="5%"><%= al.item_type %></td>
+        <td width="5%"><%= al.extra_info %></td>
+        <td width="15%"><%= al.time_str %></td>
+    </tr>
+    <%
+    });
+    %>
+    </tbody>
+</table>
+<div id="pageDiv"></div>
+<%- include ../layout/footer %>

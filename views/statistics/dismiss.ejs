@@ -1,0 +1,65 @@
+<%- include ../layout/header %>
+<%- include ../layout/navigation_bar %>
+
+<% if (message) { %>
+<center><div class="alert"><%= message %></div></center>
+<% } %>
+
+<h1 class="title">经验池统计</h1>
+<div class="sub_nav search control" >
+    <p>
+    <form>
+        UID:&nbsp;&nbsp;<input id="uid" type="text" name="uid" value="<%= uid %>"/>&nbsp;&nbsp;
+        时间区间:<input id="start_date" type="text" name="start_date" value="<%= start_date %>"/>
+        至 <input id="end_date" type="text" name="end_date" value="<%= end_date %>"/>
+        <select id="ttype" name="ttype"><option value="" <%= '' === ttype ? 'selected="selected"' : ''%>>全部</option>
+            <option value="0" <%= '0' === ttype ? 'selected="selected"' : '' %>>产出</option>
+            <option value="1" <%= '1' === ttype ? 'selected="selected"' : ''%>>消耗</option>
+        </select>
+        <input type="submit" value="搜索"/>
+    </form>
+    </p>
+</div>
+<div class="sub_nav">
+    总计： <%= totalCount %> 条记录
+</div>
+
+<div id="chart"></div>
+
+<table class="grid_order">
+    <tbody>
+    <tr>
+        <td width="10%">UID</td>
+        <td width="10%">类型</td>
+        <td width="10%">操作</td>
+        <td>经验池</td>
+        <td>操作后经验池</td>
+        <td>数量</td>
+        <td width="10%">相关id</td>
+        <td width="10%">相关类型</td>
+        <td width="10%">等级</td>
+        <td width="15%">时间</td>
+    </tr>
+
+    <%
+    epls.forEach(function(epl){
+    %>
+    <tr>
+        <td width="8%"><%= epl.account_id %></td>
+        <td width="5%"><%= epl.ttype === 0 ? "产出" : "消耗" %></td>
+        <td width="10%"><%= epl.from_str %></td>
+        <td><%= epl.exp %></td>
+        <td><%= epl.exp_pool %></td>
+        <td width="10%"><%= epl.num %></td>
+        <td width="5%"><%= epl.item_id %></td>
+        <td width="5%"><%= epl.item_type %></td>
+        <td width="5%"><%= epl.level %></td>
+        <td width="15%"><%= epl.time_str %></td>
+    </tr>
+    <%
+    });
+    %>
+    </tbody>
+</table>
+<div id="pageDiv"></div>
+<%- include ../layout/footer %>

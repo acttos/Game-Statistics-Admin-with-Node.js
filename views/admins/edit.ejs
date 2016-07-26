@@ -1,0 +1,45 @@
+
+<%- include ../layout/header %>
+<%- include ../layout/navigation_bar %>
+<% if (message) { %>
+<center><div class="alert"><%= message %></div></center>
+<% } %>
+<!-- 这里展示结果 -->
+<table class="grid_order">
+    <form method="post">
+        <tbody>
+        <tr>
+            <td width="10%">Email:</td>
+            <td width="50%" align="center"><input type="text" size="30" name="email" id="email" value="<%= null != data ? data.email : ''%>" readonly="true"/></td>
+        </tr>
+        <tr>
+            <td width="10%">名称:</td>
+            <td width="50%" align="center"><input type="text" size="30" name="name" id="name" value="<%= null != data ? data.name : ''%>"/></td>
+        </tr>
+        <tr>
+            <td width="10%">密码:</td>
+            <td width="50%" align="center"><input type="password" size="30" name="password" id="password"/></td>
+        </tr>
+        <tr>
+            <td width="10%" >密码确认:</td>
+            <td width="50%" align="center"><input type="password" size="30" name="rp_password" id="rp_password"/></td>
+        </tr>
+        <tr>
+            <td width="10%" >角色:</td>
+            <td width="50%" align="center">
+                <select name="role" id="role">
+                    <option value ="user" <%= data.role == 'user' ? 'selected' : ''%>>用&nbsp;&nbsp;&nbsp;户</option>
+                    <option value ="admin" <%= data.role == 'admin' ? 'selected' : ''%>>管理员</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td width="10%" ></td>
+            <td width="50%" ><button onmouseout="this.className='button_submit_s';" onmouseover="this.className='button_submit_s button_submit_s_hover';" type="submit" class="button_submit_s"> 提交 </button></td>
+        </tr>
+        </tbody>
+    </form>
+</table>
+<%- include ../layout/footer %>
+
+

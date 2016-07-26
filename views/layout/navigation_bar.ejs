@@ -1,0 +1,219 @@
+<div id="css_sidebar">
+    <h1 class="title">后台管理系统</h1>
+    <div class="panel">
+        <%
+            if(typeof user != 'undefined' && user.role == 'admin'){
+        %>
+        <div class="panel_title">
+                    <a href="javascript:void(0)">GM账号管理</a>
+        </div>
+        <ul class="list">
+            <li>
+                <a href="/admins">GM账号列表</a>
+            </li>
+        </ul>
+        <%
+        }
+        %>
+        <!--<div class="panel_title">-->
+            <!--<a href="javascript:void(0)">用户管理</a>-->
+        <!--</div>-->
+        <!--<ul class="list">-->
+            <!--<li>-->
+                <!--<a href="/accounts">用户列表</a>-->
+            <!--</li>-->
+        <!--</ul>-->
+        <!--<div class="panel_title">-->
+            <!--<a href="javascript:void(0)">卡牌管理</a>-->
+        <!--</div>-->
+        <!--<ul class="list">-->
+            <!--<li>-->
+                <!--<a href="/cards">卡牌列表</a>-->
+            <!--</li>-->
+        <!--</ul>-->
+        <!--<div class="panel_title">-->
+            <!--<a href="javascript:void(0)">装备管理</a>-->
+        <!--</div>-->
+        <!--<ul class="list">-->
+            <!--<li>-->
+                <!--<a href="/arms">装备列表</a>-->
+            <!--</li>-->
+            <!-- <li>
+                <a href="/arms/new">添加装备</a>
+            </li> -->
+        <!--</ul>-->
+        <!-- <div class="panel_title">
+            <a href="javascript:void(0)">技能管理</a>
+        </div>
+        <ul class="list">
+            <li>
+                <a href="/skills">技能列表</a>
+            </li>
+            <li>
+                <a href="/skills/new">添加技能</a>
+            </li>
+        </ul> -->
+        <!--<div class="panel_title">-->
+            <!--<a href="javascript:void(0)">道具管理</a>-->
+        <!--</div>-->
+        <!--<ul class="list">-->
+            <!--<li>-->
+                <!--<a href="/props">道具列表</a>-->
+            <!--</li>-->
+            <!--&lt;!&ndash; <li>-->
+                <!--<a href="/props/new">添加道具</a>-->
+            <!--</li> &ndash;&gt;-->
+        <!--</ul>-->
+
+        <div class="panel_title">
+            <a href="javascript:void(0)">用户/充值统计</a>
+        </div>
+        <ul class="list">
+            <li>
+                <a href="/statistics">用户统计</a>
+            </li>
+            <!--<li>-->
+                <!--<a href="/statistics/level_users">用户等级统计</a>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<a href="/statistics/vip_users">用户vip等级统计</a>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<a href="/statistics/guide">用户引导统计(慎点！)</a>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<a href="/statistics/jobs">用户关卡统计(慎点！)</a>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<a href="/statistics/job_times">用户关卡次数统计</a>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<a href="/statistics/battle?type=0">用户封神之战统计</a>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<a href="/statistics/ranker">斗法排名统计(慎点！)</a>-->
+            <!--</li>-->
+            <li>
+                <a href="/statistics/pay_records">充值统计</a>
+            </li>
+
+
+        </ul>
+
+        <!--<div class="panel_title">-->
+            <!--<a href="javascript:void(0)">飞流统计</a>-->
+        <!--</div>-->
+        <!--<ul class="list">-->
+            <!--<li>-->
+                <!--<a href="/feiliu/shop_prop?ttype=0">商店道具统计</a>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<a href="/feiliu/shop_prop?ttype=1">商店礼包统计</a>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<a href="/feiliu/recharge">充值额度统计</a>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<a href="/feiliu/depletion?ttype=1">元宝消耗统计</a>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<a href="/feiliu/depletion?ttype=4">道具消耗统计</a>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<a href="/feiliu/box">箱子统计</a>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<a href="/feiliu/ghost">魂魄统计</a>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<a href="/feiliu/visit_times">访问次数统计(慎点！)</a>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<a href="/feiliu/visit_times?ttype=1">访问人数统计(慎点！)</a>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<a href="/feiliu/score_convert">阅历兑换</a>-->
+            <!--</li>-->
+        <!--</ul>-->
+        <div class="panel_title">
+            <a href="javascript:void(0)">产出/消耗统计</a>
+        </div>
+        <ul class="list">
+            <li>
+                <a href="/statistics/money">银币统计</a>
+            </li>
+            <li>
+                <a href="/statistics/gold">金币统计</a>
+            </li>
+            <li>
+                <a href="/statistics/stamina">体力统计</a>
+            </li>
+            <li>
+                <a href="/statistics/ghost">魂魄统计</a>
+            </li>
+            <li>
+                <a href="#/statistics/copy_ghost">副本魂魄统计</a>
+            </li>
+            <li>
+                <a href="#/statistics/heaven_ghost">天宫魂魄统计</a>
+            </li>
+            <li>
+                <a href="/statistics/prop">道具统计</a>
+            </li>
+            <li>
+                <a href="/statistics/arm">装备统计</a>
+            </li>
+            <li>
+                <a href="/statistics/dismiss">遣散统计</a>
+            </li>
+            <li>
+                <a href="/statistics/xiuyuan">修缘统计</a>
+            </li>
+            <li>
+                <a href="/statistics/experience">阅历统计</a>
+            </li>
+            <!--<li>-->
+                <!--<a href="/statistics/huayuan">化缘统计</a>-->
+            <!--</li>-->
+        </ul>
+
+        <!--<div class="panel_title">-->
+            <!--<a href="javascript:void(0)">客服</a>-->
+        <!--</div>-->
+        <!--<ul class="list">-->
+            <!--<li>-->
+                <!--<a href="/sys_msgs/statistics">消息统计</a>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<a href="/sys_msgs">消息列表</a>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<a href="/sys_msgs/new">发消息</a>-->
+            <!--</li>-->
+            <!--<li><a href="/sys_msgs/all">发全体玩家消息</a></li>-->
+            <!--<li><a href="/vip_records/new">补偿VIP等级</a></li>-->
+        <!--</ul>-->
+        <!--<ul class="list">-->
+            <!--<li>-->
+                <!--<a href="/apns">Push列表</a>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<a href="/apns/new">发Push</a>-->
+            <!--</li>-->
+        <!--</ul>-->
+
+        <!--<ul class="list">-->
+            <!--<li>-->
+                <!--<a href="/exchange_code_categories">兑换码类型列表</a>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<a href="/exchange_code_categories/new">新建兑换码类型</a>-->
+            <!--</li>-->
+        <!--</ul>-->
+
+
+    </div>
+    <div class="clear">
+    </div>
+</div>
+<div id="css_mainbody">

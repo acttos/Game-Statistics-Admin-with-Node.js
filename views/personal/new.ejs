@@ -1,0 +1,11 @@
+
+<%- include ../layout/header %>
+<%- include ../layout/navigation_bar %>
+<!-- 这里展示结果 -->
+<% if (message) { %>
+    <center><div class="alert"><%= message %></div></center>
+<% } %>
+<%- include _form %>
+<%- include ../layout/footer %>
+
+

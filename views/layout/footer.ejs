@@ -1,0 +1,31 @@
+</div>
+<div class="clear"></div>
+   </div>
+   <div id="foot">
+     <br/>
+     <span class="infor"><center>Copyright © 2013　LanYou</center></span>
+   </div>
+  </div>
+ </body>
+</html>
+
+<script type='text/javascript'>
+      var options = {
+          currentPage: <%= typeof(currentPage) !== 'undefined' ? currentPage : 1 %>,
+          totalPages: <%= typeof(totalPages) !== 'undefined' ? totalPages : 1 %>,
+          pageUrl: function(type, page, current){
+              var href = window.location.href;
+              if(href.indexOf('?') !== -1){
+                  if(href.indexOf('page=') !== -1){
+                      return href.replace(/page=\d{0,9}/,'page=' + page);
+                  }else{
+                      return href + '&page=' + page;
+                  }
+              }else{
+                  return href + '?page=' + page;
+              }
+          }
+      }
+
+      $('#pageDiv').bootstrapPaginator(options);
+</script>

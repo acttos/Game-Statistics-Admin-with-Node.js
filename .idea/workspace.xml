@@ -1,0 +1,784 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/views/statistics/dismiss.ejs" />
+    <bookmark url="file://$PROJECT_DIR$/views/statistics/arm.ejs" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" readonly="true" id="11d9e86b-a1d4-4e84-85e3-b6b757b37ff1" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/util/Constant.js" afterPath="$PROJECT_DIR$/util/Constant.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/statistics/xiuyuan.ejs" afterPath="$PROJECT_DIR$/views/statistics/xiuyuan.ejs" />
+    </list>
+    <ignored path="sishen_admin.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="sishen_admin" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="Constant.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/util/Constant.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="89" column="78" selection-start="8889" selection-end="8889" vertical-scroll-proportion="0.67421603" vertical-offset="859" max-vertical-offset="1554">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="xiuyuan.ejs" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/statistics/xiuyuan.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="21" column="6" selection-start="907" selection-end="907" vertical-scroll-proportion="-12.782609" vertical-offset="0" max-vertical-offset="868">
+              <folding>
+                <marker date="1396952657000" expanded="true" signature="89:155" placeholder="{...}" />
+                <marker date="1396952657000" expanded="true" signature="223:906" placeholder="..." />
+                <marker date="1396952657000" expanded="true" signature="232:237" placeholder="..." />
+                <marker date="1396952657000" expanded="true" signature="243:890" placeholder="..." />
+                <marker date="1396952657000" expanded="true" signature="559:836" placeholder="..." />
+                <marker date="1396952657000" expanded="true" signature="928:965" placeholder="..." />
+                <marker date="1396952657000" expanded="true" signature="1017:1640" placeholder="..." />
+                <marker date="1396952657000" expanded="true" signature="1029:1631" placeholder="..." />
+                <marker date="1396952657000" expanded="true" signature="1038:1243" placeholder="..." />
+                <marker date="1396952657000" expanded="true" signature="1281:1610" placeholder="{...}" />
+                <marker date="1396952657000" expanded="true" signature="1297:1596" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="stamina.ejs" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/statistics/stamina.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="47" column="63" selection-start="1465" selection-end="1520" vertical-scroll-proportion="-28.608696" vertical-offset="0" max-vertical-offset="952">
+              <folding>
+                <marker date="1396333821000" expanded="true" signature="89:155" placeholder="{...}" />
+                <marker date="1396333821000" expanded="true" signature="1390:1879" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="statistics.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/service/statistics.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="46" selection-start="407" selection-end="407" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8876">
+              <folding>
+                <element signature="e#1155#15068#0" expanded="false" />
+                <element signature="e#15343#17994#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindManager">
+    <FindUsagesManager>
+      <setting name="OPEN_NEW_TAB" value="false" />
+    </FindUsagesManager>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="changedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/settings_bip1.js" />
+        <option value="$PROJECT_DIR$/util/MailUtil.js" />
+        <option value="$PROJECT_DIR$/views/statistics/money.ejs" />
+        <option value="$PROJECT_DIR$/models/mongo/MoneyLog.js" />
+        <option value="$PROJECT_DIR$/models/mongo/ArmLog.js" />
+        <option value="$PROJECT_DIR$/models/mongo/BuffLog.js" />
+        <option value="$PROJECT_DIR$/models/mongo/CardLog.js" />
+        <option value="$PROJECT_DIR$/models/mongo/ExpoolLog.js" />
+        <option value="$PROJECT_DIR$/models/mongo/FosterLog.js" />
+        <option value="$PROJECT_DIR$/models/mongo/GhostLog.js" />
+        <option value="$PROJECT_DIR$/models/mongo/GoldLog.js" />
+        <option value="$PROJECT_DIR$/models/mongo/LotLog.js" />
+        <option value="$PROJECT_DIR$/models/mongo/PropLog.js" />
+        <option value="$PROJECT_DIR$/models/mongo/ScoreLog.js" />
+        <option value="$PROJECT_DIR$/models/mongo/StaminaLog.js" />
+        <option value="$PROJECT_DIR$/service/statistics.js" />
+        <option value="$PROJECT_DIR$/views/statistics/xiuyuan.ejs" />
+        <option value="$PROJECT_DIR$/util/Constant.js" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="-878" />
+    <option name="width" value="1600" />
+    <option name="height" value="878" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Bitwise operation issuesJavaScript</id>
+          </State>
+          <State>
+            <id>CoffeeScript</id>
+          </State>
+          <State>
+            <id>Control flow issuesJavaScript</id>
+          </State>
+          <State>
+            <id>GeneralJavaScript</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>Potentially confusing code constructsJavaScript</id>
+          </State>
+          <State>
+            <id>Probable bugsCoffeeScript</id>
+          </State>
+          <State>
+            <id>Probable bugsJavaScript</id>
+          </State>
+        </expanded-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="2" id="Remove" />
+  </component>
+  <component name="ProjectReloadState">
+    <option name="STATE" value="0" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sishen_admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sishen_admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sishen_admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sishen_admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sishen_admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sishen_admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sishen_admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="statistics" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sishen_admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sishen_admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="util" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sishen_admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sishen_admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="service" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sishen_admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sishen_admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="models" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth1" value="142" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth0" value="140" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth3" value="75" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth2" value="151" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder1" value="1" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder0" value="0" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder3" value="3" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder2" value="2" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth2" value="132" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder5" value="5" />
+    <property name="recentsLimit" value="5" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth1" value="129" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatOrder4" value="4" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth0" value="127" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth5" value="927" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth4" value="128" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeWidth3" value="127" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="FullScreen" value="false" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth4" value="122" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_flatWidth5" value="940" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder5" value="5" />
+    <property name="options.lastSelected" value="editor.preferences.smartKeys" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder3" value="3" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder4" value="4" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder1" value="1" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder2" value="2" />
+    <property name="FileHistory.org.jetbrains.idea.svn.history.SvnHistoryProvider_treeOrder0" value="0" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="restartRequiresConfirmation" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="options.searchVisible" value="true" />
+    <property name="LayoutCode.rearrangeEntriesJavaScript" value="false" />
+    <property name="full.screen.before.presentation.mode" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/views/statistics" />
+      <recent name="$PROJECT_DIR$/models/mongo" />
+      <recent name="$PROJECT_DIR$/views/scheduler" />
+      <recent name="$PROJECT_DIR$/service" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/" />
+      <recent name="$PROJECT_DIR$/views/access" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Node.js.debug-sishen-app">
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="name" value="Dart" />
+      <option name="saveOutputToFile" value="false" />
+      <option name="showConsoleOnStdErr" value="false" />
+      <option name="showConsoleOnStdOut" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <option name="VMOptions" />
+      <option name="arguments" />
+      <option name="filePath" />
+      <option name="scope" value="ALL" />
+      <option name="testName" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" singleton="true" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="" />
+      <setting name="serverType" value="INTERNAL" />
+      <setting name="preferredDebugBrowser" value="CHROME" />
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSRemoteDebug" factoryName="Node.js Remote Debug">
+      <node-js-remote-debug />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="/usr/local/bin/node" path-to-js-file="$PROJECT_DIR$/app.js" working-dir="$PROJECT_DIR$">
+      <browser start="false" url="" with-js-debugger="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="debug-sishen-app" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="/usr/local/bin/node" path-to-js-file="app.js" node-parameters="/usr/local/lib/node_modules/supervisor/lib/cli-wrapper.js --exec         /usr/local/bin/node --no-restart-on exit" working-dir="$PROJECT_DIR$">
+      <browser start="false" url="" with-js-debugger="false" />
+      <RunnerSettings RunnerId="NodeJS.run" />
+      <ConfigurationWrapper RunnerId="NodeJS.run" />
+      <method />
+    </configuration>
+    <list size="2">
+      <item index="0" class="java.lang.String" itemvalue="Node.js.run-sishen-app" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.debug-sishen-app" />
+    </list>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="true" SSL_PROTOCOLS="sslv3">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <configuration useDefault="true">$USER_HOME$/.subversion</configuration>
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="SvnFileUrlMappingImpl">
+    <option name="myMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$PROJECT_DIR$" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+    <option name="myMoreRealMappingRoots">
+      <list>
+        <SvnCopyRootSimple>
+          <option name="myVcsRoot" value="$PROJECT_DIR$" />
+          <option name="myCopyRoot" value="$PROJECT_DIR$" />
+        </SvnCopyRootSimple>
+      </list>
+    </option>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="11d9e86b-a1d4-4e84-85e3-b6b757b37ff1" name="Default" comment="" />
+      <created>1395383539126</created>
+      <updated>1395383539126</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Add come comments and add statistics index page data.">
+      <created>1395451949151</created>
+      <updated>1395451949151</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Add reset password entrance with email link clicking.">
+      <created>1395467313106</created>
+      <updated>1395467313106</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Add retentions to statistics index page">
+      <created>1395481370106</created>
+      <updated>1395481370106</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Add retentions to statistics index page">
+      <created>1395483773109</created>
+      <updated>1395483773109</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Test svn commit.">
+      <created>1395483799104</created>
+      <updated>1395483799104</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Add a path to add daily visit summary .">
+      <created>1395647279140</created>
+      <updated>1395647279140</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Add some produce and depletion entrances.">
+      <created>1395830525150</created>
+      <updated>1395830525150</updated>
+    </task>
+    <task id="LOCAL-00008" summary="1.Add log4js support for entrances.&#10;2.Add email support for new added user.&#10;3.Change the date util method name to fit normal knowledge.&#10;4.Add server name on header with dynamic word.">
+      <created>1396003274104</created>
+      <updated>1396003274104</updated>
+    </task>
+    <task id="LOCAL-00009" summary="1.Add log4js support for service layer and controller layer.">
+      <created>1396079659157</created>
+      <updated>1396079659157</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Make the session keys different between servers.&#10;Add bcc to mail util to monitor all system mail.&#10;Modify query parameters input form of serval pages.">
+      <created>1396261853107</created>
+      <updated>1396261853107</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Add start.sh and restart.sh to root directory of project.">
+      <created>1396261959103</created>
+      <updated>1396261959103</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Change the 'from' of logs into Chinese Characters .">
+      <created>1396338221106</created>
+      <updated>1396338221106</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Add 'referer' to login action,just in case of user needing old url to access.">
+      <created>1396351244104</created>
+      <updated>1396351244104</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Add server name in the email subject.">
+      <created>1396431394107</created>
+      <updated>1396431394107</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Change the subject">
+      <created>1396431651102</created>
+      <updated>1396431651102</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Change the content with server name">
+      <created>1396431857103</created>
+      <updated>1396431857103</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Change the content with server name">
+      <created>1396432031103</created>
+      <updated>1396432031103</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Change the content with server name">
+      <created>1396432114104</created>
+      <updated>1396432114104</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Add handling method for un-number 'from' type of logs.">
+      <created>1396513459131</created>
+      <updated>1396513459131</updated>
+    </task>
+    <task id="LOCAL-00020" summary="Change the type of 'from' in log models.">
+      <created>1396594034163</created>
+      <updated>1396594034163</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Add external folders to repository;&#10;Add Constant.js for 'from' define of logs">
+      <created>1396951777289</created>
+      <updated>1396951777289</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="-878" width="1600" height="878" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32880098" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32880098" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35632184" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1375" sideWeight="0.79693484" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39974457" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32950193" sideWeight="0.5" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20766379" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32950193" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="SVN Properties" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32950193" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32950193" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USERS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+    <MESSAGE value="Add come comments and add statistics index page data." />
+    <MESSAGE value="Add reset password entrance with email link clicking." />
+    <MESSAGE value="Add retentions to statistics index page" />
+    <MESSAGE value="Test svn commit." />
+    <MESSAGE value="Add a path to add daily visit summary ." />
+    <MESSAGE value="Add some produce and depletion entrances." />
+    <MESSAGE value="1.Add log4js support for entrances.&#10;2.Add email support for new added user.&#10;3.Change the date util method name to fit normal knowledge.&#10;4.Add server name on header with dynamic word." />
+    <MESSAGE value="1.Add log4js support for service layer and controller layer." />
+    <MESSAGE value="Make the session keys different between servers.&#10;Add bcc to mail util to monitor all system mail.&#10;Modify query parameters input form of serval pages." />
+    <MESSAGE value="Add start.sh and restart.sh to root directory of project." />
+    <MESSAGE value="Change the 'from' of logs into Chinese Characters ." />
+    <MESSAGE value="Add 'referer' to login action,just in case of user needing old url to access." />
+    <MESSAGE value="Add server name in the email subject." />
+    <MESSAGE value="Change the subject" />
+    <MESSAGE value="Change the content with server name" />
+    <MESSAGE value="Add handling method for un-number 'from' type of logs." />
+    <MESSAGE value="Change the type of 'from' in log models." />
+    <MESSAGE value="Add external folders to repository" />
+    <MESSAGE value="Add external folders to repository;&#10;Add Constant.js for 'from' define of logs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add external folders to repository;&#10;Add Constant.js for 'from' define of logs" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/util/Constant.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="61" selection-start="7652" selection-end="7652" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1554">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/statistics.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="58" selection-start="1138" selection-end="1138" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8876">
+          <folding>
+            <element signature="e#1155#15068#0" expanded="false" />
+            <element signature="e#15343#17994#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/Constant.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="61" selection-start="7652" selection-end="7652" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1665">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/statistics.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="53" selection-start="725" selection-end="725" vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="9510">
+          <folding>
+            <element signature="e#1155#15068#0" expanded="false" />
+            <element signature="e#15343#17994#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/Constant.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="61" selection-start="7652" selection-end="7652" vertical-scroll-proportion="0.0" vertical-offset="1155" max-vertical-offset="1665">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/statistics.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="622" column="11" selection-start="27875" selection-end="27875" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="9510">
+          <folding>
+            <element signature="e#1155#15068#0" expanded="false" />
+            <element signature="e#15343#17994#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/mongo/PayRecord.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="294" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/mongo/PropLog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="38" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0" vertical-offset="84" max-vertical-offset="308" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/mongo/User.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="350" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/mongo/UserLogin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="62" selection-start="462" selection-end="462" vertical-scroll-proportion="0.0" vertical-offset="182" max-vertical-offset="266" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/access.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="8" selection-start="595" selection-end="595" vertical-scroll-proportion="0.11149228" vertical-offset="229" max-vertical-offset="3150" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/MailUtil.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="30" selection-start="1458" selection-end="1458" vertical-scroll-proportion="0.6795302" vertical-offset="267" max-vertical-offset="1022" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/mongo/GoldLog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="38" selection-start="218" selection-end="218" vertical-scroll-proportion="0.1409396" vertical-offset="0" max-vertical-offset="596" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/mongo/GhostLog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="38" selection-start="219" selection-end="219" vertical-scroll-proportion="0.1409396" vertical-offset="0" max-vertical-offset="596" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/mongo/FosterLog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="38" selection-start="220" selection-end="220" vertical-scroll-proportion="0.1409396" vertical-offset="0" max-vertical-offset="596" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/mongo/ExpoolLog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="38" selection-start="220" selection-end="220" vertical-scroll-proportion="0.1409396" vertical-offset="0" max-vertical-offset="596" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/mongo/DailyVisitSummary.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="596" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/mongo/CardLog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="38" selection-start="218" selection-end="218" vertical-scroll-proportion="0.1409396" vertical-offset="0" max-vertical-offset="596" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/mongo/BuffLog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="38" selection-start="218" selection-end="218" vertical-scroll-proportion="0.1409396" vertical-offset="0" max-vertical-offset="596" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/mongo/LotLog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="38" selection-start="217" selection-end="217" vertical-scroll-proportion="0.1409396" vertical-offset="0" max-vertical-offset="596" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/mongo/PayRecord.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="294" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/mongo/ScoreLog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="38" selection-start="219" selection-end="219" vertical-scroll-proportion="0.1409396" vertical-offset="0" max-vertical-offset="596" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/mongo/StaminaLog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="38" selection-start="221" selection-end="221" vertical-scroll-proportion="0.1409396" vertical-offset="0" max-vertical-offset="596" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/mongo/PropLog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="38" selection-start="218" selection-end="218" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="308" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/mongo/User.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="596" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/mongo/UserLogin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="62" selection-start="462" selection-end="462" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="266" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/service/statistics.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="46" selection-start="407" selection-end="407" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="8876">
+          <folding>
+            <element signature="e#1155#15068#0" expanded="false" />
+            <element signature="e#15343#17994#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/statistics/stamina.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="63" selection-start="1465" selection-end="1520" vertical-scroll-proportion="-28.608696" vertical-offset="0" max-vertical-offset="952">
+          <folding>
+            <marker date="1396333821000" expanded="true" signature="89:155" placeholder="{...}" />
+            <marker date="1396333821000" expanded="true" signature="1390:1879" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/statistics/xiuyuan.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="6" selection-start="907" selection-end="907" vertical-scroll-proportion="-12.782609" vertical-offset="0" max-vertical-offset="868">
+          <folding>
+            <marker date="1396952657000" expanded="true" signature="89:155" placeholder="{...}" />
+            <marker date="1396952657000" expanded="true" signature="223:906" placeholder="..." />
+            <marker date="1396952657000" expanded="true" signature="232:237" placeholder="..." />
+            <marker date="1396952657000" expanded="true" signature="243:890" placeholder="..." />
+            <marker date="1396952657000" expanded="true" signature="559:836" placeholder="..." />
+            <marker date="1396952657000" expanded="true" signature="928:965" placeholder="..." />
+            <marker date="1396952657000" expanded="true" signature="1017:1640" placeholder="..." />
+            <marker date="1396952657000" expanded="true" signature="1029:1631" placeholder="..." />
+            <marker date="1396952657000" expanded="true" signature="1038:1243" placeholder="..." />
+            <marker date="1396952657000" expanded="true" signature="1281:1610" placeholder="{...}" />
+            <marker date="1396952657000" expanded="true" signature="1297:1596" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/util/Constant.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="89" column="78" selection-start="8889" selection-end="8889" vertical-scroll-proportion="0.67421603" vertical-offset="859" max-vertical-offset="1554">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
+
