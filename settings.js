@@ -54,8 +54,8 @@ module.exports = {
             host :  'smtp.sina.com',
             port :  25,
             auth : {
-                user : 'daily_data@sina.com',
-                pass : 'Fuckyousina100'
+                user : 'name@sina.com',
+                pass : 'Passw0rd'
             }
         }
     },
