@@ -13,11 +13,11 @@
 ```
 $mongo localhost:27017
 
->show dbs;
+> show dbs;
 
->use ZONE2_db
+> use ZONE2_db
 
->db.users.insert({"name":"Admin","email":"admin@domain.com","password":"f8788ae3246b46ab6bc2bc2a9f8e9b61","role":"admin","login_count":0});
+> db.users.insert({"name":"Admin","email":"admin@domain.com","password":"f8788ae3246b46ab6bc2bc2a9f8e9b61","role":"admin","login_count":0});
 ```
 执行完上述步骤，你将可以通过email:admin@domain.com，password:123456 来登录系统。
 ### 2.系统输出日志
