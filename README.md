@@ -1,7 +1,7 @@
 # Game_Statistics-Admin
 
 这是用 Node.js + Express + Mongose + EJS 实现的、简单的、用于后台管理及数据统计的尝试。
-需要安装Node，具体请参考搜索引擎结果。
+需要安装Node，具体安装步骤请参考搜索引擎结果。
 
 ## Usage
 
@@ -20,6 +20,9 @@ $mongo localhost:27017
 > db.users.insert({"name":"Admin","email":"admin@domain.com","password":"f8788ae3246b46ab6bc2bc2a9f8e9b61","role":"admin","login_count":0});
 ```
 执行完上述步骤，你将可以通过email:admin@domain.com，password:123456 来登录系统。
+
+> 另外还可以手动执行password.js来生成自定义的用户名和密码：
+
 ### 2.系统输出日志
 
 系统日志的输出路径可以在settings.js中进行配置，请修改path，并按照path添加folder(s):
