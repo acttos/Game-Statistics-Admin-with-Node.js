@@ -11,8 +11,6 @@ var MongoStore = require('connect-mongo')(express);
 var settings = require('./settings');
 var flash = require('connect-flash');
 
-var filter = require('./filter');
-
 var accessLogger = require('./util/Log4jsUtil').access;
 var monitorLogger = require('./util/Log4jsUtil').monitor;
 
