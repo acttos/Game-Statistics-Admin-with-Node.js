@@ -20,9 +20,9 @@ var sendMail = function (data) {
 
 /**
  * 发送密码重置通知邮件
- * @param {String} who 接收人的邮件地址
+ * @param {String} to 接收人的邮件地址
  * @param {String} token 重置用的token字符串
- * @param {String} name 接收人的用户名
+ * @param {String} host 对应的服务器名称，如：华北3区，电信239区等等
  */
 exports.sendResetPassMail = function (to, token, host) {
     var from = settings.mail.sender.auth.user;
@@ -45,9 +45,10 @@ exports.sendResetPassMail = function (to, token, host) {
 
 /**
  * 发送新增用户通知邮件
- * @param {String} who 接收人的邮件地址
+ * @param {String} admin 当前操作系统的人员
+ * @param {String} to 接收人的邮件地址
  * @param {String} token 重置用的token字符串
- * @param {String} name 接收人的用户名
+ * @param {String} host 对应的服务器名称，如：华北3区，电信239区等等
  */
 exports.sendAddNewUserMail = function (admin,to, token,host) {
     var from = settings.mail.sender.auth.user;
