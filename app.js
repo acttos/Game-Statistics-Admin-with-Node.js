@@ -34,8 +34,7 @@ app.use(express.session({
   store: new MongoStore({
       host:settings.db.mongo[settings.server.env].host,
       port:settings.db.mongo[settings.server.env].port,
-    db: settings.db.mongo[settings.server.env].db
-
+      db:settings.db.mongo[settings.server.env].db
   })
 }));
 //全局访问路径控制

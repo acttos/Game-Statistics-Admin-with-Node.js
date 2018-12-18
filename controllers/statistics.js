@@ -7,7 +7,7 @@ var settings = require('../settings');
  * controllers/statistics.js.
  */
 
-exports.index = function(req, res){
+exports.index = function (req, res) {
     var queryDate = req.query.date;
     var pageIndex = req.query.page;
     var pageSize = settings.page.smallPageSize;
@@ -16,16 +16,16 @@ exports.index = function(req, res){
 
     queryDate = typeof queryDate === 'undefined' ? DateUtil.getYMDFormatWithOffset(-1) : DateUtil.getYMDFormat(new Date(queryDate));
 
-    statisticsService.handleStatisticsIndexPage(queryDate, pageIndex, pageSize, function(err,data){
-        if(err){
+    statisticsService.handleStatisticsIndexPage(queryDate, pageIndex, pageSize, function (err, data) {
+        if (err) {
             errorLogger.error(err);
-            req.flash('message',err.message);
+            req.flash('message', err.message);
         }
         res.render('statistics/', data);
     });
 };
 
-exports.payRecords = function(req, res){
+exports.payRecords = function (req, res) {
     var type = req.query.type;
     var value = req.query.value;
     var startDate = req.query.start_date;
@@ -40,16 +40,16 @@ exports.payRecords = function(req, res){
     startDate = typeof startDate === 'undefined' ? DateUtil.getYMDFormatWithOffset(-2) : startDate;
     endDate = typeof endDate === 'undefined' ? DateUtil.getYMDFormatWithOffset(-1) : endDate;
 
-    statisticsService.handlePayRecordsPage(type,value,startDate,endDate,pageIndex,pageSize,function(err,data){
-        if(err){
+    statisticsService.handlePayRecordsPage(type, value, startDate, endDate, pageIndex, pageSize, function (err, data) {
+        if (err) {
             errorLogger.error(err);
-            req.flash('message',err.message);
+            req.flash('message', err.message);
         }
-        res.render('statistics/pay_records',data);
+        res.render('statistics/pay_records', data);
     });
 };
 
-exports.money = function(req, res){
+exports.money = function (req, res) {
     var uid = req.query.uid;
     var startDate = req.query.start_date;
     var endDate = req.query.end_date;
@@ -64,17 +64,17 @@ exports.money = function(req, res){
     startDate = typeof startDate === 'undefined' ? DateUtil.getYMDFormatWithOffset(-2) : startDate;
     endDate = typeof endDate === 'undefined' ? DateUtil.getYMDFormatWithOffset(-1) : endDate;
 
-    statisticsService.handleMoneyPage(uid,startDate,endDate,ttype,pageIndex,pageSize,function(err,data){
-        if(err){
+    statisticsService.handleMoneyPage(uid, startDate, endDate, ttype, pageIndex, pageSize, function (err, data) {
+        if (err) {
             errorLogger.error(err);
-            req.flash('message',err.message);
+            req.flash('message', err.message);
         }
         res.render('statistics/money', data);
     });
 
 };
 
-exports.gold = function(req, res){
+exports.gold = function (req, res) {
     var uid = req.query.uid;
     var startDate = req.query.start_date;
     var endDate = req.query.end_date;
@@ -89,17 +89,17 @@ exports.gold = function(req, res){
     startDate = typeof startDate === 'undefined' ? DateUtil.getYMDFormatWithOffset(-2) : startDate;
     endDate = typeof endDate === 'undefined' ? DateUtil.getYMDFormatWithOffset(-1) : endDate;
 
-    statisticsService.handleGoldPage(uid,startDate,endDate,ttype,pageIndex,pageSize,function(err,data){
-        if(err){
+    statisticsService.handleGoldPage(uid, startDate, endDate, ttype, pageIndex, pageSize, function (err, data) {
+        if (err) {
             errorLogger.error(err);
-            req.flash('message',err.message);
+            req.flash('message', err.message);
         }
         res.render('statistics/gold', data);
     });
 
 };
 
-exports.stamina = function(req, res){
+exports.stamina = function (req, res) {
     var uid = req.query.uid;
     var startDate = req.query.start_date;
     var endDate = req.query.end_date;
@@ -114,17 +114,17 @@ exports.stamina = function(req, res){
     startDate = typeof startDate === 'undefined' ? DateUtil.getYMDFormatWithOffset(-2) : startDate;
     endDate = typeof endDate === 'undefined' ? DateUtil.getYMDFormatWithOffset(-1) : endDate;
 
-    statisticsService.handleStaminaPage(uid,startDate,endDate,ttype,pageIndex,pageSize,function(err,data){
-        if(err){
+    statisticsService.handleStaminaPage(uid, startDate, endDate, ttype, pageIndex, pageSize, function (err, data) {
+        if (err) {
             errorLogger.error(err);
-            req.flash('message',err.message);
+            req.flash('message', err.message);
         }
         res.render('statistics/stamina', data);
     });
 
 };
 
-exports.ghost = function(req, res){
+exports.ghost = function (req, res) {
     var uid = req.query.uid;
     var startDate = req.query.start_date;
     var endDate = req.query.end_date;
@@ -139,37 +139,37 @@ exports.ghost = function(req, res){
     startDate = typeof startDate === 'undefined' ? DateUtil.getYMDFormatWithOffset(-2) : startDate;
     endDate = typeof endDate === 'undefined' ? DateUtil.getYMDFormatWithOffset(-1) : endDate;
 
-    statisticsService.handleGhostPage(uid,startDate,endDate,ttype,pageIndex,pageSize,function(err,data){
-        if(err){
+    statisticsService.handleGhostPage(uid, startDate, endDate, ttype, pageIndex, pageSize, function (err, data) {
+        if (err) {
             errorLogger.error(err);
-            req.flash('message',err.message);
+            req.flash('message', err.message);
         }
         res.render('statistics/ghost', data);
     });
 
 };
 
-exports.copyGhost = function(req, res){
+exports.copyGhost = function (req, res) {
     var startDate = req.query.start_date;
     var endDate = req.query.end_date;
     startDate = typeof startDate === 'undefined' ? DateUtil.getYMDFormatWithOffset(-2) : startDate;
     endDate = typeof endDate === 'undefined' ? DateUtil.getYMDFormatWithOffset(-1) : endDate;
 
-    statisticsService.handleCopyGhostPage(startDate,endDate,function(err,data){
-        if(err){
+    statisticsService.handleCopyGhostPage(startDate, endDate, function (err, data) {
+        if (err) {
             errorLogger.error(err);
-            req.flash('message',err.message);
+            req.flash('message', err.message);
         }
         res.render('statistics/ghost', data);
     });
 
 };
 
-exports.heavenGhost = function(req, res){
+exports.heavenGhost = function (req, res) {
     res.render('statistics/heaven_ghost', { content: 'statistics-ranker' });
 };
 
-exports.prop = function(req, res){
+exports.prop = function (req, res) {
     var uid = req.query.uid;
     var startDate = req.query.start_date;
     var endDate = req.query.end_date;
@@ -184,17 +184,17 @@ exports.prop = function(req, res){
     startDate = typeof startDate === 'undefined' ? DateUtil.getYMDFormatWithOffset(-2) : startDate;
     endDate = typeof endDate === 'undefined' ? DateUtil.getYMDFormatWithOffset(-1) : endDate;
 
-    statisticsService.handlePropPage(uid,startDate,endDate,ttype,pageIndex,pageSize,function(err,data){
-        if(err){
+    statisticsService.handlePropPage(uid, startDate, endDate, ttype, pageIndex, pageSize, function (err, data) {
+        if (err) {
             errorLogger.error(err);
-            req.flash('message',err.message);
+            req.flash('message', err.message);
         }
         res.render('statistics/prop', data);
     });
 
 };
 
-exports.arm = function(req, res){
+exports.arm = function (req, res) {
     var uid = req.query.uid;
     var startDate = req.query.start_date;
     var endDate = req.query.end_date;
@@ -209,17 +209,17 @@ exports.arm = function(req, res){
     startDate = typeof startDate === 'undefined' ? DateUtil.getYMDFormatWithOffset(-2) : startDate;
     endDate = typeof endDate === 'undefined' ? DateUtil.getYMDFormatWithOffset(-1) : endDate;
 
-    statisticsService.handleArmPage(uid,startDate,endDate,ttype,pageIndex,pageSize,function(err,data){
-        if(err){
+    statisticsService.handleArmPage(uid, startDate, endDate, ttype, pageIndex, pageSize, function (err, data) {
+        if (err) {
             errorLogger.error(err);
-            req.flash('message',err.message);
+            req.flash('message', err.message);
         }
         res.render('statistics/arm', data);
     });
 
 };
 
-exports.dismiss = function(req, res){
+exports.dismiss = function (req, res) {
     var uid = req.query.uid;
     var startDate = req.query.start_date;
     var endDate = req.query.end_date;
@@ -234,17 +234,17 @@ exports.dismiss = function(req, res){
     startDate = typeof startDate === 'undefined' ? DateUtil.getYMDFormatWithOffset(-2) : startDate;
     endDate = typeof endDate === 'undefined' ? DateUtil.getYMDFormatWithOffset(-1) : endDate;
 
-    statisticsService.handleDismissPage(uid,startDate,endDate,ttype,pageIndex,pageSize,function(err,data){
-        if(err){
+    statisticsService.handleDismissPage(uid, startDate, endDate, ttype, pageIndex, pageSize, function (err, data) {
+        if (err) {
             errorLogger.error(err);
-            req.flash('message',err.message);
+            req.flash('message', err.message);
         }
         res.render('statistics/dismiss', data);
     });
 
 };
 
-exports.xiuyuan = function(req, res){
+exports.xiuyuan = function (req, res) {
     var uid = req.query.uid;
     var startDate = req.query.start_date;
     var endDate = req.query.end_date;
@@ -259,17 +259,17 @@ exports.xiuyuan = function(req, res){
     startDate = typeof startDate === 'undefined' ? DateUtil.getYMDFormatWithOffset(-2) : startDate;
     endDate = typeof endDate === 'undefined' ? DateUtil.getYMDFormatWithOffset(-1) : endDate;
 
-    statisticsService.handleXiuyuanPage(uid,startDate,endDate,ttype,pageIndex,pageSize,function(err,data){
-        if(err){
+    statisticsService.handleXiuyuanPage(uid, startDate, endDate, ttype, pageIndex, pageSize, function (err, data) {
+        if (err) {
             errorLogger.error(err);
-            req.flash('message',err.message);
+            req.flash('message', err.message);
         }
         res.render('statistics/xiuyuan', data);
     });
 
 };
 
-exports.experience = function(req, res){
+exports.experience = function (req, res) {
     var uid = req.query.uid;
     var startDate = req.query.start_date;
     var endDate = req.query.end_date;
@@ -284,16 +284,16 @@ exports.experience = function(req, res){
     startDate = typeof startDate === 'undefined' ? DateUtil.getYMDFormatWithOffset(-2) : startDate;
     endDate = typeof endDate === 'undefined' ? DateUtil.getYMDFormatWithOffset(-1) : endDate;
 
-    statisticsService.handleExperiencePage(uid,startDate,endDate,ttype,pageIndex,pageSize,function(err,data){
-        if(err){
+    statisticsService.handleExperiencePage(uid, startDate, endDate, ttype, pageIndex, pageSize, function (err, data) {
+        if (err) {
             errorLogger.error(err);
-            req.flash('message',err.message);
+            req.flash('message', err.message);
         }
         res.render('statistics/experience', data);
     });
 
 };
 
-exports.huayuan = function(req, res){
+exports.huayuan = function (req, res) {
     res.render('statistics/huayuan', { content: 'statistics-ranker' });
 };

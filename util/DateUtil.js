@@ -7,25 +7,25 @@ module.exports = DateUtil;
  * @param date type Date
  * @returns {string}
  */
-DateUtil.getYMDFormat = function(date){
+DateUtil.getYMDFormat = function (date) {
     var year = date.getFullYear();
     var month = date.getMonth() + 1;
     var day = date.getDate();
 
-    if(month < 10){
+    if (month < 10) {
         month = '0' + month;
     }
-    if(day < 10){
+    if (day < 10) {
         day = '0' + day;
     }
 
     return year + '-' + month + '-' + day;
 };
 
-DateUtil.getYMDFormatBetweenDate = function(startDate,endDate){
+DateUtil.getYMDFormatBetweenDate = function (startDate, endDate) {
     var result = [];
     var tempTime = startDate;
-    while(endDate >= tempTime){
+    while (endDate >= tempTime) {
         result.push(this.getYMDFormat(startDate));
         tempTime = startDate.setDate(startDate.getDate() + 1);
     }
@@ -37,7 +37,7 @@ DateUtil.getYMDFormatBetweenDate = function(startDate,endDate){
  * @param date type Date
  * @returns {string}
  */
-DateUtil.getYMDHMSFormat = function(date){
+DateUtil.getYMDHMSFormat = function (date) {
     var year = date.getFullYear();
     var month = date.getMonth() + 1;
     var day = date.getDate();
@@ -46,20 +46,20 @@ DateUtil.getYMDHMSFormat = function(date){
     var minute = date.getMinutes();
     var second = date.getSeconds();
 
-    if(month < 10){
+    if (month < 10) {
         month = '0' + month;
     }
-    if(day < 10){
+    if (day < 10) {
         day = '0' + day;
     }
 
-    if(hour < 10){
+    if (hour < 10) {
         hour = '0' + hour;
     }
-    if(minute < 10){
+    if (minute < 10) {
         minute = '0' + minute;
     }
-    if(second < 10){
+    if (second < 10) {
         second = '0' + second;
     }
 
@@ -70,7 +70,7 @@ DateUtil.getYMDHMSFormat = function(date){
  * @param date type Date
  * @returns {string}
  */
-DateUtil.getYMDHMSSFormat = function(date){
+DateUtil.getYMDHMSSFormat = function (date) {
     var year = date.getFullYear();
     var month = date.getMonth() + 1;
     var day = date.getDate();
@@ -81,27 +81,27 @@ DateUtil.getYMDHMSSFormat = function(date){
 
     var millionSecond = date.getMilliseconds();
 
-    if(month < 10){
+    if (month < 10) {
         month = '0' + month;
     }
-    if(day < 10){
+    if (day < 10) {
         day = '0' + day;
     }
 
-    if(hour < 10){
+    if (hour < 10) {
         hour = '0' + hour;
     }
-    if(minute < 10){
+    if (minute < 10) {
         minute = '0' + minute;
     }
-    if(second < 10){
+    if (second < 10) {
         second = '0' + second;
     }
 
-    if(millionSecond < 10){
+    if (millionSecond < 10) {
         millionSecond = '00' + millionSecond;
     }
-    if(millionSecond >= 10 && millionSecond < 100){
+    if (millionSecond >= 10 && millionSecond < 100) {
         millionSecond = '0' + millionSecond;
     }
 
@@ -112,19 +112,19 @@ DateUtil.getYMDHMSSFormat = function(date){
  * @param date type Date
  * @returns {string}
  */
-DateUtil.getYMDFormatWithOffset = function(offset){
+DateUtil.getYMDFormatWithOffset = function (offset) {
     var date = new Date();
 
-    date.setDate(date.getDate() + offset );
+    date.setDate(date.getDate() + offset);
 
     var year = date.getFullYear();
     var month = date.getMonth() + 1;
     var day = date.getDate();
 
-    if(month < 10){
+    if (month < 10) {
         month = '0' + month;
     }
-    if(day < 10){
+    if (day < 10) {
         day = '0' + day;
     }
 
@@ -137,10 +137,10 @@ DateUtil.getYMDFormatWithOffset = function(offset){
  * @param date type Date
  * @returns {string}
  */
-DateUtil.getYMDHMSFormatWithOffset = function(offset){
+DateUtil.getYMDHMSFormatWithOffset = function (offset) {
     var date = new Date();
 
-    date.setDate(date.getDate() + offset );
+    date.setDate(date.getDate() + offset);
 
     var year = date.getFullYear();
     var month = date.getMonth() + 1;
@@ -150,20 +150,20 @@ DateUtil.getYMDHMSFormatWithOffset = function(offset){
     var minute = date.getMinutes();
     var second = date.getSeconds();
 
-    if(month < 10){
+    if (month < 10) {
         month = '0' + month;
     }
-    if(day < 10){
+    if (day < 10) {
         day = '0' + day;
     }
 
-    if(hour < 10){
+    if (hour < 10) {
         hour = '0' + hour;
     }
-    if(minute < 10){
+    if (minute < 10) {
         minute = '0' + minute;
     }
-    if(second < 10){
+    if (second < 10) {
         second = '0' + second;
     }
 
@@ -171,19 +171,19 @@ DateUtil.getYMDHMSFormatWithOffset = function(offset){
 
 };
 
-DateUtil.getYMDFormatOfOffset = function(date,offset){
+DateUtil.getYMDFormatOfOffset = function (date, offset) {
     var date = new Date(date);
 
-    date.setDate(date.getDate() + offset );
+    date.setDate(date.getDate() + offset);
 
     var year = date.getFullYear();
     var month = date.getMonth() + 1;
     var day = date.getDate();
 
-    if(month < 10){
+    if (month < 10) {
         month = '0' + month;
     }
-    if(day < 10){
+    if (day < 10) {
         day = '0' + day;
     }
 
