@@ -1,6 +1,6 @@
 # Game_Statistics-Admin
 
-这是用 Node.js + Express + Mongose + EJS 实现的、简单的、用于后台管理及数据统计的尝试。
+这是用 Node.js + Express + Mongoose + EJS 实现的、简单的、用于后台管理及数据统计的尝试。
 需要安装Node，具体安装步骤请参考搜索引擎结果。
 
 ## Usage
